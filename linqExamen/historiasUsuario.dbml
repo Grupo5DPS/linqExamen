@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DBHistoriasUsuario" Class="historiasUsuarioDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=JSPC\SQLEXPRESS;Initial Catalog=DBHistoriasUsuario;Integrated Security=True" SettingsObjectName="linqExamen.Properties.Settings" SettingsPropertyName="DBHistoriasUsuarioConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TAntecedentesFamiliares" Member="AntecedentesFamiliares">
+    <Type Name="AntecedentesFamiliares">
+      <Column Name="idAntecedenteF" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="diabetes" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="cancer" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="tuberculosis" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="ipertension" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="sida" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="covid" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="otrasEnfermedades" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Association Name="TAntecedentesFamiliares_THistoria" Member="Historia" ThisKey="idAntecedenteF" OtherKey="idAntecedenteF" Type="Historia" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TAntecedentesPersonales" Member="AntecedentesPersonales">
+    <Type Name="AntecedentesPersonales">
+      <Column Name="idAntecedenteP" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="relacionesSexuales" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="edadSexInicio" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="sexFrecuencia" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="nroParejas" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="usasProteccion" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="vacunaSarampion" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="vacunaViruela" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="vacunaRabia" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="vacunaFiebreA" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="vacunaHepatitis" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="otrasVacunas" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Association Name="TAntecedentesPersonales_THistoria" Member="Historia" ThisKey="idAntecedenteP" OtherKey="idAntecedenteP" Type="Historia" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TAntecedentesQuirurjicos" Member="AntecedentesQuirurjicos">
+    <Type Name="AntecedentesQuirurjicos">
+      <Column Name="idAntecedenteQ" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tuvoIntervencion" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="nroVeces" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="causaOperacion" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="alergias" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="queAlergias" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="sufreDiabetes" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="sufreEpilepsia" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="sufreHipertension" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="otrasEnfermedades" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="medicamentos" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Column Name="queMedicamentos" Type="System.String" DbType="VarChar(150) NOT NULL" CanBeNull="false" />
+      <Association Name="TAntecedentesQuirurjicos_THistoria" Member="Historia" ThisKey="idAntecedenteQ" OtherKey="idAntecedenteQ" Type="Historia" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TDiagnosticos" Member="Diagnosticos">
+    <Type Name="Diagnosticos">
+      <Column Name="codDiagnostico" Type="System.String" DbType="Char(8) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(300) NOT NULL" CanBeNull="false" />
+      <Association Name="TDiagnosticos_THistoria" Member="Historia" ThisKey="codDiagnostico" OtherKey="codDiagnostico" Type="Historia" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TDoctor" Member="Doctor">
+    <Type Name="Doctor">
+      <Column Name="idDoctor" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="apellidoPaterno" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="apellidoMaterno" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Especialidad" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="direccion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="telefono" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="idHospital" Type="System.String" DbType="Char(5) NOT NULL" CanBeNull="false" />
+      <Association Name="TDoctor_THistoria" Member="Historia" ThisKey="idDoctor" OtherKey="idDoctor" Type="Historia" />
+      <Association Name="THospital_TDoctor" Member="Hospital" ThisKey="idHospital" OtherKey="idHospital" Type="Hospital" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.THistoria" Member="Historia">
+    <Type Name="Historia">
+      <Column Name="idHistoria" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="peso" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="talla" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="motivoConsulta" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="sintomas" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="adicciones" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="idPaciente" Type="System.String" DbType="Char(5) NOT NULL" CanBeNull="false" />
+      <Column Name="idDoctor" Type="System.String" DbType="Char(5) NOT NULL" CanBeNull="false" />
+      <Column Name="idUsuario" Type="System.String" DbType="Char(5) NOT NULL" CanBeNull="false" />
+      <Column Name="idHospital" Type="System.String" DbType="Char(5) NOT NULL" CanBeNull="false" />
+      <Column Name="idAntecedenteP" Type="System.String" DbType="Char(5) NOT NULL" CanBeNull="false" />
+      <Column Name="idAntecedenteF" Type="System.String" DbType="Char(5) NOT NULL" CanBeNull="false" />
+      <Column Name="idAntecedenteQ" Type="System.String" DbType="Char(5) NOT NULL" CanBeNull="false" />
+      <Column Name="codDiagnostico" Type="System.String" DbType="Char(8) NOT NULL" CanBeNull="false" />
+      <Column Name="fechaRegistro" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="TAntecedentesFamiliares_THistoria" Member="AntecedentesFamiliares" ThisKey="idAntecedenteF" OtherKey="idAntecedenteF" Type="AntecedentesFamiliares" IsForeignKey="true" />
+      <Association Name="TAntecedentesPersonales_THistoria" Member="AntecedentesPersonales" ThisKey="idAntecedenteP" OtherKey="idAntecedenteP" Type="AntecedentesPersonales" IsForeignKey="true" />
+      <Association Name="TAntecedentesQuirurjicos_THistoria" Member="AntecedentesQuirurjicos" ThisKey="idAntecedenteQ" OtherKey="idAntecedenteQ" Type="AntecedentesQuirurjicos" IsForeignKey="true" />
+      <Association Name="TDiagnosticos_THistoria" Member="Diagnosticos" ThisKey="codDiagnostico" OtherKey="codDiagnostico" Type="Diagnosticos" IsForeignKey="true" />
+      <Association Name="TDoctor_THistoria" Member="Doctor" ThisKey="idDoctor" OtherKey="idDoctor" Type="Doctor" IsForeignKey="true" />
+      <Association Name="TPaciente_THistoria" Member="Paciente" ThisKey="idPaciente" OtherKey="idPaciente" Type="Paciente" IsForeignKey="true" />
+      <Association Name="TUsuario_THistoria" Member="Usuario" ThisKey="idUsuario" OtherKey="idUsuario" Type="Usuario" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TPaciente" Member="Paciente">
+    <Type Name="Paciente">
+      <Column Name="idPaciente" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="apellidoPaterno" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="apellidoMaterno" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="dni" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="edad" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="sexo" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="fechaNacimiento" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Column Name="estadoCivil" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ocupacion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="direccion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="telefono" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="fechaIngreso" Type="System.DateTime" DbType="Date NOT NULL" CanBeNull="false" />
+      <Association Name="TPaciente_THistoria" Member="Historia" ThisKey="idPaciente" OtherKey="idPaciente" Type="Historia" />
+    </Type>
+  </Table>
+  <Table Name="dbo.THospital" Member="Hospital">
+    <Type Name="Hospital">
+      <Column Name="idHospital" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nombreHospital" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="direccion" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="THospital_TDoctor" Member="Doctor" ThisKey="idHospital" OtherKey="idHospital" Type="Doctor" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TUsuario" Member="Usuario">
+    <Type Name="Usuario">
+      <Column Name="idUsuario" Type="System.String" DbType="Char(5) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="usuario" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="contrasenia" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Association Name="TUsuario_THistoria" Member="Historia" ThisKey="idUsuario" OtherKey="idUsuario" Type="Historia" />
+    </Type>
+  </Table>
+</Database>

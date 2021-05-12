@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 23.25" name="historiasUsuario">
+  <DataContextMoniker Name="/historiasUsuarioDataContext" />
+  <nestedChildShapes>
+    <classShape Id="ee936eab-c1b9-4103-af97-599830658193" absoluteBounds="3.5, 8.875, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/historiasUsuarioDataContext/AntecedentesFamiliares" />
+      <nestedChildShapes>
+        <elementListCompartment Id="123bd96f-4f8c-4024-b96b-60f8bba4969f" absoluteBounds="3.515, 9.335, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="de37c552-36a5-4fa8-8d01-5ff9ba9bea80" absoluteBounds="3.5, 12, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/historiasUsuarioDataContext/AntecedentesPersonales" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8af4aa7e-f1f7-4733-9779-7cfa6f2536a1" absoluteBounds="3.515, 12.46, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c45d46b0-62db-462e-9112-97c5b1b65c86" absoluteBounds="3.5, 15.875, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/historiasUsuarioDataContext/AntecedentesQuirurjicos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6aa0e9d4-5808-4f6b-bccd-a46f191e86f9" absoluteBounds="3.515, 16.335, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d9fd93fd-c16b-4548-9406-e17028765459" absoluteBounds="3.5, 4.75, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/historiasUsuarioDataContext/Diagnosticos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="64d83cd3-ab5e-4dfe-87eb-b8620400b85a" absoluteBounds="3.515, 5.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c1581758-c69c-435d-831e-3b7269a5c352" absoluteBounds="3.5, 1.625, 2, 2.347801106770834">
+      <DataClassMoniker Name="/historiasUsuarioDataContext/Doctor" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ded1b9d1-c41e-4877-a23e-c42175754d0a" absoluteBounds="3.515, 2.085, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ffaadcf6-e292-451c-a6d6-5334b2053e1a" absoluteBounds="6.25, 1, 2, 3.6939111328124992">
+      <DataClassMoniker Name="/historiasUsuarioDataContext/Historia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3f559946-fe49-4166-b742-1c880eb3b70f" absoluteBounds="6.265, 1.46, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="acdee4fc-9a6f-4e9b-b0e7-684dedf8760d" absoluteBounds="3.5, 19.75, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/historiasUsuarioDataContext/Paciente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6e795a30-102e-4738-9d00-d1dbfddd160d" absoluteBounds="3.515, 20.21, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="310f7ac1-a5ab-45f1-88dc-166b11991221" absoluteBounds="0.75, 2.125, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/historiasUsuarioDataContext/Hospital" />
+      <nestedChildShapes>
+        <elementListCompartment Id="13a8f7e3-6a3f-480c-8f31-212d92c8c95f" absoluteBounds="0.765, 2.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2e5912c1-7013-4d73-a5c4-2da4d9fed4ac" absoluteBounds="3.5, 6.75, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/historiasUsuarioDataContext/Usuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="14841b99-e888-4491-be7c-734d839cb209" absoluteBounds="3.515, 7.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 10.0489005533854); (6.63541416666667 : 10.0489005533854 : JumpStart); (6.80208083333333 : 10.0489005533854 : JumpEnd); (6.90104041666667 : 10.0489005533854 : JumpStart); (7.06770708333333 : 10.0489005533854 : JumpEnd); (7.25 : 10.0489005533854); (7.25 : 4.6939111328125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/historiasUsuarioDataContext/AntecedentesFamiliares/TAntecedentesFamiliares_THistoria" />
+      <nodes>
+        <classShapeMoniker Id="ee936eab-c1b9-4103-af97-599830658193" />
+        <classShapeMoniker Id="ffaadcf6-e292-451c-a6d6-5334b2053e1a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 13.5585034179688); (6.7187475 : 13.5585034179688); (6.7187475 : 4.6939111328125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/historiasUsuarioDataContext/AntecedentesPersonales/TAntecedentesPersonales_THistoria" />
+      <nodes>
+        <classShapeMoniker Id="de37c552-36a5-4fa8-8d01-5ff9ba9bea80" />
+        <classShapeMoniker Id="ffaadcf6-e292-451c-a6d6-5334b2053e1a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 17.4335034179688); (6.90104041666667 : 17.4335034179688 : JumpStart); (7.06770708333333 : 17.4335034179688 : JumpEnd); (7.7812525 : 17.4335034179688); (7.7812525 : 4.6939111328125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/historiasUsuarioDataContext/AntecedentesQuirurjicos/TAntecedentesQuirurjicos_THistoria" />
+      <nodes>
+        <classShapeMoniker Id="c45d46b0-62db-462e-9112-97c5b1b65c86" />
+        <classShapeMoniker Id="ffaadcf6-e292-451c-a6d6-5334b2053e1a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 5.34699625651042); (6.45312125 : 5.34699625651042); (6.45312125 : 4.6939111328125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/historiasUsuarioDataContext/Diagnosticos/TDiagnosticos_THistoria" />
+      <nodes>
+        <classShapeMoniker Id="d9fd93fd-c16b-4548-9406-e17028765459" />
+        <classShapeMoniker Id="ffaadcf6-e292-451c-a6d6-5334b2053e1a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.79890055338542); (6.25 : 2.79890055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/historiasUsuarioDataContext/Doctor/TDoctor_THistoria" />
+      <nodes>
+        <classShapeMoniker Id="c1581758-c69c-435d-831e-3b7269a5c352" />
+        <classShapeMoniker Id="ffaadcf6-e292-451c-a6d6-5334b2053e1a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 21.4046541341146); (6.98437375 : 21.4046541341146); (6.98437375 : 4.6939111328125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/historiasUsuarioDataContext/Paciente/TPaciente_THistoria" />
+      <nodes>
+        <classShapeMoniker Id="acdee4fc-9a6f-4e9b-b0e7-684dedf8760d" />
+        <classShapeMoniker Id="ffaadcf6-e292-451c-a6d6-5334b2053e1a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.81814697265625); (3.5 : 2.81814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/historiasUsuarioDataContext/Hospital/THospital_TDoctor" />
+      <nodes>
+        <classShapeMoniker Id="310f7ac1-a5ab-45f1-88dc-166b11991221" />
+        <classShapeMoniker Id="c1581758-c69c-435d-831e-3b7269a5c352" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 7.44314697265625); (6.63541416666667 : 7.44314697265625 : JumpStart); (6.80208083333333 : 7.44314697265625 : JumpEnd); (6.90104041666667 : 7.44314697265625 : JumpStart); (7.06770708333333 : 7.44314697265625 : JumpEnd); (7.16666666666667 : 7.44314697265625 : JumpStart); (7.33333333333333 : 7.44314697265625 : JumpEnd); (7.51562625 : 7.44314697265625); (7.51562625 : 4.6939111328125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/historiasUsuarioDataContext/Usuario/TUsuario_THistoria" />
+      <nodes>
+        <classShapeMoniker Id="2e5912c1-7013-4d73-a5c4-2da4d9fed4ac" />
+        <classShapeMoniker Id="ffaadcf6-e292-451c-a6d6-5334b2053e1a" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
